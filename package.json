@@ -1,0 +1,24 @@
+{
+  "name": "@red-cup-engineering/computer-content-graph-engineering-services-section",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Owns typed content-graph catalogs and their deterministic engine boundary. Leaf services provide graph carriers, event streams, serialization, and operation journals.",
+  "exports": {
+    "./event-stream": "./scripts/event-stream.mjs",
+    "./operations-graph": "./scripts/operations-graph.mjs"
+  },
+  "files": [
+    "scripts",
+    "README.md"
+  ],
+  "scripts": {
+    "check": "for f in $(find scripts -name '*.mjs'); do node --check \"$f\" || exit 1; done",
+    "test": "node --test test/*.test.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "@red-cup-engineering/metrologic": "workspace:*"
+  }
+}
