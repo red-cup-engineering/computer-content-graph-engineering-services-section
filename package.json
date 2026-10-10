@@ -19,6 +19,6 @@
     "node": ">=22"
   },
   "dependencies": {
-    "@red-cup-engineering/metrologic": "workspace:*"
+    "@red-cup-engineering/metrologic": "0.3.0"
   }
 }
