@@ -1,6 +1,6 @@
 {
   "name": "@red-cup-engineering/computer-content-graph-engineering-services-section",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "description": "Owns typed content-graph catalogs and their deterministic engine boundary. Leaf services provide graph carriers, event streams, serialization, and operation journals.",
   "exports": {
@@ -19,7 +19,7 @@
     "node": ">=22"
   },
   "dependencies": {
-    "@red-cup-engineering/metrologic": "0.3.0"
+    "@red-cup-engineering/metrologic": "0.4.0"
   },
   "private": false
 }
