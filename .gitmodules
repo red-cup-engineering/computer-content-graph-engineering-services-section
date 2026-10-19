@@ -1,0 +1,4 @@
+[submodule "computer-graph-serialization-services-section"]
+	path = services/computer-graph-serialization-services-section
+	url = https://github.com/red-cup-engineering/computer-graph-serialization-services-section.git
+	branch = main
