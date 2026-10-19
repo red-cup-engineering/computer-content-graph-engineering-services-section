@@ -5,8 +5,7 @@
   "description": "Owns typed content-graph catalogs and their deterministic engine boundary. Leaf services provide graph carriers, event streams, serialization, and operation journals.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/red-cup-engineering/computer-content-engineering-services-section.git",
-    "directory": "services/computer-content-graph-engineering-services-section"
+    "url": "git+https://github.com/red-cup-engineering/computer-content-graph-engineering-services-section.git"
   },
   "exports": {
     "./event-stream": "./scripts/event-stream.mjs",
