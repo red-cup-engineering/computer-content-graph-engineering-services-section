@@ -1,0 +1,23 @@
+{
+  "name": "@red-cup-engineering/event-stream-data-service",
+  "version": "0.1.0",
+  "private": false,
+  "type": "module",
+  "description": "Small, dependency-free primitives for validated single-writer event streams, incremental projections, and deterministic replay.",
+  "exports": {
+    ".": {
+      "types": "./src/event-stream.d.ts",
+      "default": "./src/event-stream.mjs"
+    }
+  },
+  "files": [
+    "src",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "name": "@red-cup-engineering/graph-data-service",
+  "version": "0.7.0",
+  "private": false,
+  "type": "module",
+  "description": "Small, dependency-free directed-graph primitives: typed nodes and edges, acyclicity and topological order, cycle enumeration, reachability, order-independent merge, and deterministic JSON/DOT/mermaid serialization.",
+  "exports": {
+    ".": {
+      "types": "./src/graph.d.ts",
+      "default": "./src/graph.mjs"
+    },
+    "./relation-web": "./src/relation-web.mjs",
+    "./pam": "./src/pam.mjs",
+    "./four-profile": "./src/four-profile.mjs",
+    "./cell-moves": "./src/cell-moves.mjs",
+    "./relation-adapters": "./src/relation-adapters.mjs"
+  },
+  "dependencies": {
+    "@lenticule-science/metrologic": "0.3.0",
+    "@red-cup-engineering/computer-data-engineering-services-section": "0.1.0",
+    "@red-cup-engineering/computer-system-engine": "0.1.0",
+    "@red-cup-engineering/json-services-section": "1.0.0"
+  },
+  "files": [
+    "src",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
