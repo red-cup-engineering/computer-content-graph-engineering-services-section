@@ -2,3 +2,7 @@
 	path = services/computer-graph-serialization-services-section
 	url = https://github.com/red-cup-engineering/computer-graph-serialization-engineering-services-section.git
 	branch = main
+[submodule "services/schema-org-engineering-services-section"]
+	path = services/schema-org-engineering-services-section
+	url = https://github.com/red-cup-engineering/schema-org-engineering-services-section.git
+	branch = main
