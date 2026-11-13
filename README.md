@@ -33,7 +33,7 @@ The leaf services are deliberately narrow:
   the typed content reading.
 - `operations-graph-service` records admitted operational relations and their
   obstructions.
-- `computer-graph-serialization-services-section` owns representation bindings.
+- `computer-graph-serialization-engineering-services-section` owns representation bindings.
 
 The dependency direction is therefore engineering → computer engineering →
 computer data engineering → computer content engineering → this section.
