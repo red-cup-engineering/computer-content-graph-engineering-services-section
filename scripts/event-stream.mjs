@@ -3,9 +3,9 @@ export function createValidatedQueue({ validate = (value) => (value && typeof va
   let pending = [];
   return {
     push(value) {
-      const admitted = validate(value);
-      if (admitted !== null && admitted !== undefined) pending.push(admitted);
-      return admitted;
+      const validated = validate(value);
+      if (validated !== null && validated !== undefined) pending.push(validated);
+      return validated;
     },
     drain() {
       const batch = pending;
