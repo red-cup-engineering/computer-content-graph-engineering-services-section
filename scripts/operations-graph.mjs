@@ -186,9 +186,9 @@ export function admitEdge(operationsGraph, edge, { rules = [] } = {}) {
  * are folded back in directly; refusals contribute a journal entry only, no
  * graph change, exactly as they did the first time.
  */
-export function replay(log) {
+export function replay(journal) {
   let operationsGraph = createOperationsGraph();
-  for (const entry of log) {
+  for (const entry of journal) {
     if (entry.type === "node-admitted") {
       operationsGraph = withState(operationsGraph, { nodes: [...operationsGraph.nodes, entry.node], entry });
     } else if (entry.type === "edge-admitted") {
